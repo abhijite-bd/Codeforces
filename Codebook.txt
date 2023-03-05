@@ -1,0 +1,111 @@
+Sum of all numbers in an array,vector
+// accumulate(array_name,array_name+array_size,count_start_from);
+accumulate(a,a+n,0);
+accumulate(v.begin(),v.end(),0);{use 0LL for long long};
+
+Find minimum element
+mn=*min_element(a,a+n);
+mn=*min_element(v.begin(),v.end());
+for locatoin(minimum element)
+mn=min_element(a,a+n)-a;
+mn=min_element(v.begin(),v.end())-v.begin;
+int d=distance(a,min_element(a,a+n));
+int d=distance(v.begin(),min_element(v.begin(),v.end()));
+
+Find maximum element
+mx=*max_element(a,a+n);
+mx=*max_element(v.begin(),v.end());
+for locatoin(maximum element)
+mx=max_element(a,a+n)-a;
+mx=max_element(v.begin(),v.end())-v.begin;
+int d=distance(a,max_element(a,a+n));
+int d=distance(v.begin(),max_element(v.begin(),v.end()));
+
+sort
+sort(a,a+n);
+sort(v.begin(),v.end());
+sort(reverse)
+sort(a,a+n,greater<int>());
+sort(v.rbegin(),v.rend());
+count element
+int cnt=count(a,a+n,element);
+int cnt=count(v.begin(),v.end(),element);
+
+string
+get a full line with spaces
+getline(cin,string_name);
+size of string
+int n=s.size();
+reverse a string
+reverse(s.begin(),s.end());
+sort a string
+sort(s.begin(),s.end());
+sort a string reverse
+sort(s.rbegin(),s.rend);
+add a character or string
+s += 'character';
+s += string_name;
+character to digit
+int d = character-'0';
+digit to string
+string s=to_string(digit);
+string to int
+int d=stoi(string_name);
+string to long long int
+long long int d=stoll(string_name);
+remove spaces from a string
+s.erase(remove(s.begin(),s.end(),' '),s.end);
+lowercase to uppercase
+char c=toupper('character');
+Uppercase to lowercase
+char c=tolower('character');
+Convert whole string from uppercase to lowercase
+transform(s.begin(),s.end(),s.begin(),::tolower);
+Convert the whole string from lowercase to uppercase
+transform(s.begin(),s,end().s.begin(),::toupper);
+find a character in a string
+s.find('character');/
+find(s.begin(),s.end(),'character');
+location: s.find('character')-s.begin();
+count character in a string
+count(s.begin(),s.end(),'character');
+make a substring
+string sub=s.substr(location,size);{location type integer}
+string s=string(string_size,'character');
+
+etc
+int gcd=__gcd(a,b);
+int lcm=a*b/__gcd(a,b);
+int mx=max(a,b);
+int mn=min(a,b);
+int mx=max(a,max(a,b));
+int mn=min(a,min(a,b));
+permutation
+int a[]={1,2,3,4};
+do{
+    cout<<a[0]<<" "<<a[1]<<" "<<a[2]<<ss<<a[3]<<endl;
+}while(next_permutation(a,a+4));
+
+binary_search(startaddress,endaddress,valueTOfind);
+returns 1/0;{array must be in sorted order}
+
+auto lower = lower_bound(v.begin(), v.end(), 6);
+auto upper = upper_bound(v.begin(), v.end(), 6);
+
+assign an array in vector
+vector<int> v(array_name,array_size);
+assign an array in array
+cpy_n(source_array,array_size,target_array);
+
+vector<int>v(size,number);
+vector<int>v(2,3);//3 3
+
+int a[3];
+iota(a,a+3,100);//100 101 102
+{we can assign only 0/-1 through memset}
+memset(array_name,0,sizeof(array_name));//0 0 0
+memset(array_name,-1,sizeof(array_name));// -1 -1 -1
+
+
+
+
